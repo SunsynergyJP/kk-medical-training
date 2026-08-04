@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MMJ Academy コタキナバル臨床研修プログラム in European Wellness Premier Center</title>
+<meta name="description" content="MMJ Academy認定の医師・歯科医師・獣医師向け海外臨床研修プログラム。舞台はコタキナバルの世界最大級の再生医療統合施設。2026年10月10日〜12日、2泊3日。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: {
+            DEFAULT: '#0B1F3A',
+            light: '#132A4D',
+            dark: '#071527',
+          },
+          gold: {
+            DEFAULT: '#C9A66B',
+            light: '#E4CFA0',
+            dark: '#A98849',
+          },
+          offwhite: '#F8F6F2',
+        },
+        fontFamily: {
+          serif: ['"Shippori Mincho"', '"Noto Serif JP"', 'serif'],
+          sans: ['"Noto Sans JP"', '"Hiragino Sans"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-feature-settings: "palt"; }
+  section[id], div[id] { scroll-margin-top: 88px; }
+
+  .placeholder-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #d9d9d4 0%, #c7c7c0 50%, #b9b9b1 100%);
+    color: #5b5b54;
+    overflow: hidden;
+  }
+  .placeholder-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(45deg, rgba(11,31,58,0.05) 25%, transparent 25%, transparent 75%, rgba(11,31,58,0.05) 75%),
+      linear-gradient(45deg, rgba(11,31,58,0.05) 25%, transparent 25%, transparent 75%, rgba(11,31,58,0.05) 75%);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+  }
+  .placeholder-img .ph-label {
+    position: relative;
+    z-index: 1;
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+  }
+  .placeholder-img .ph-icon {
+    position: relative;
+    z-index: 1;
+    font-size: 1.6rem;
+    opacity: .55;
+  }
+
+  .nav-link { position: relative; }
+  .nav-link.active { color: #C9A66B; }
+  .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -6px;
+    height: 1px;
+    background: #C9A66B;
+  }
+
+  .tab-btn[aria-selected="true"] {
+    color: #0B1F3A;
+    border-color: #C9A66B;
+    background: #F8F6F2;
+  }
+  .tab-panel.hidden { display: none; }
+
+  .faq-panel { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+  .faq-item.open .faq-panel { max-height: 600px; }
+  .faq-item.open .faq-chevron { transform: rotate(45deg); }
+  .faq-chevron { transition: transform .3s ease; }
+
+  .divider-gold {
+    width: 56px; height: 2px; background: #C9A66B;
+  }
+
+  #mobile-menu { transition: max-height .3s ease, opacity .3s ease; }
+
+  ::selection { background: #C9A66B; color: #0B1F3A; }
+
+  .btn-primary {
+    background: #C9A66B;
+    color: #0B1F3A;
+    transition: background .25s ease, transform .15s ease;
+  }
+  .btn-primary:hover { background: #E4CFA0; }
+  .btn-primary:active { transform: scale(0.98); }
+
+  .btn-outline {
+    border: 1px solid #C9A66B;
+    color: #C9A66B;
+    transition: background .25s ease, color .25s ease;
+  }
+  .btn-outline:hover { background: #C9A66B; color: #0B1F3A; }
+
+  .btn-outline-navy {
+    border: 1px solid #0B1F3A;
+    color: #0B1F3A;
+    transition: background .25s ease, color .25s ease;
+  }
+  .btn-outline-navy:hover { background: #0B1F3A; color: #F8F6F2; }
+</style>
+</head>
+<body class="bg-offwhite text-navy font-sans antialiased">
+
+<!-- ============================================================
+  1. ヘッダー
+============================================================ -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 border-b border-navy/10 transition-colors duration-300 bg-offwhite/95 backdrop-blur">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <a href="#top" class="flex flex-col leading-none shrink-0">
+        <span class="font-serif text-lg md:text-xl tracking-wide text-navy">MMJ Academy</span>
+        <span class="text-[10px] md:text-xs tracking-[0.15em] text-gold-dark mt-0.5">コタキナバル臨床研修プログラム</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm">
+        <a href="#overview" class="nav-link text-navy/80 hover:text-gold-dark">研修概要</a>
+        <a href="#concept" class="nav-link text-navy/80 hover:text-gold-dark">コンセプト</a>
+        <a href="#program" class="nav-link text-navy/80 hover:text-gold-dark">プログラム</a>
+        <a href="#instructors" class="nav-link text-navy/80 hover:text-gold-dark">講師紹介</a>
+        <a href="#schedule" class="nav-link text-navy/80 hover:text-gold-dark">スケジュール</a>
+        <a href="#eligibility" class="nav-link text-navy/80 hover:text-gold-dark">参加条件</a>
+        <a href="#pricing" class="nav-link text-navy/80 hover:text-gold-dark">費用</a>
+        <a href="#faq" class="nav-link text-navy/80 hover:text-gold-dark">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#form" class="hidden sm:inline-flex btn-primary text-xs md:text-sm font-medium px-4 md:px-5 py-2.5 rounded-sm whitespace-nowrap">
+          無料説明会に申し込む
+        </a>
+        <button id="menu-toggle" aria-label="メニューを開く" aria-expanded="false" class="lg:hidden p-2 -mr-2 text-navy">
+          <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- モバイルメニュー -->
+    <nav id="mobile-menu" class="lg:hidden max-h-0 opacity-0 overflow-hidden">
+      <div class="flex flex-col gap-1 pb-5 pt-1 text-sm border-t border-navy/10 mt-1">
+        <a href="#overview" class="mobile-link py-2.5 text-navy/85">研修概要</a>
+        <a href="#concept" class="mobile-link py-2.5 text-navy/85">なぜコタキナバルか</a>
+        <a href="#issues" class="mobile-link py-2.5 text-navy/85">こんな課題をお持ちの先生へ</a>
+        <a href="#program" class="mobile-link py-2.5 text-navy/85">プログラムの中身</a>
+        <a href="#instructors" class="mobile-link py-2.5 text-navy/85">講師紹介</a>
+        <a href="#facility" class="mobile-link py-2.5 text-navy/85">施設情報</a>
+        <a href="#schedule" class="mobile-link py-2.5 text-navy/85">スケジュール</a>
+        <a href="#outcomes" class="mobile-link py-2.5 text-navy/85">得られる成果</a>
+        <a href="#eligibility" class="mobile-link py-2.5 text-navy/85">参加条件</a>
+        <a href="#voices" class="mobile-link py-2.5 text-navy/85">参加医師の声</a>
+        <a href="#pricing" class="mobile-link py-2.5 text-navy/85">費用</a>
+        <a href="#faq" class="mobile-link py-2.5 text-navy/85">FAQ</a>
+        <a href="#form" class="mt-3 btn-primary text-center text-sm font-medium px-5 py-3 rounded-sm">無料説明会に申し込む</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================================================
+  2. ファーストビュー
+============================================================ -->
+<section class="relative bg-navy text-offwhite pt-28 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+  <!-- 推奨画像:トップ最上部の大型ヒーロー写真。
+       EWC施設の外観・エントランス、クリニック内観、または現地ドクターと日本人参加医師が
+       対話・視察している様子など、「観光」ではなく「臨床研修」を印象づける高品質な横位置写真を推奨。
+       文字の可読性を保つため、下に重ねたネイビーのグラデーションと干渉しにくい、
+       中央〜下部が比較的シンプルな構図を推奨(解像度:横1920px以上目安)。 -->
+  <div class="absolute inset-0 placeholder-img" role="img" aria-label="ヒーロー用大型写真プレースホルダー:EWC施設内観または臨床研修シーンの写真に差し替え予定"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/88 to-navy"></div>
+  <div class="absolute inset-0 opacity-[0.07]" style="background-image:radial-gradient(circle at 1px 1px, #C9A66B 1px, transparent 1px); background-size: 28px 28px;"></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-1.5 border border-offwhite/25 bg-navy/50 backdrop-blur-sm rounded-sm px-2.5 py-1.5 text-[10px] md:text-xs tracking-wide text-offwhite/70 mb-6">
+      <span aria-hidden="true">📷</span>
+      <span>写真プレースホルダー:EWC施設内観・研修シーンの写真推奨</span>
+    </div>
+
+    <p class="text-gold text-xs md:text-sm tracking-[0.2em] mb-5">MMJ ACADEMY CLINICAL TRAINING PROGRAM</p>
+
+    <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-medium">
+      世界の再生医療の現場に、<br class="hidden sm:block">日本の医師として立つ。
+    </h1>
+
+    <div class="divider-gold mx-auto my-7 md:my-9"></div>
+
+    <p class="text-sm md:text-base leading-relaxed text-offwhite/85 max-w-2xl mx-auto">
+      MMJ Academy認定の海外臨床研修プログラム。<br>
+      舞台は、コタキナバルに広がる世界最大級の再生医療統合施設。<br>
+      観光でも視察でもない——臨床家のための教育課程です。
+    </p>
+
+    <p class="font-serif text-base md:text-lg text-gold-light mt-8 leading-relaxed">
+      MMJ Academy コタキナバル臨床研修プログラム<br class="sm:hidden"> in European Wellness Premier Center
+    </p>
+
+    <div class="inline-flex items-center gap-2 mt-6 border border-gold/50 rounded-sm px-4 py-2 text-xs md:text-sm tracking-wide text-gold-light">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg>
+      2026年10月10日(土)〜12日(月・祝) 2泊3日
+    </div>
+
+    <!-- 信頼性ライン -->
+    <div class="grid sm:grid-cols-3 gap-4 md:gap-5 mt-10 md:mt-12 text-left">
+      <div class="border border-offwhite/15 rounded-sm p-5 bg-white/[0.03]">
+        <p class="text-gold text-xs tracking-wide mb-2">開催地</p>
+        <p class="text-xs md:text-sm leading-relaxed text-offwhite/85">60,000平方フィートの再生医療統合施設(2024年開設・世界46番目のEuropean Wellness拠点)</p>
+      </div>
+      <div class="border border-offwhite/15 rounded-sm p-5 bg-white/[0.03]">
+        <p class="text-gold text-xs tracking-wide mb-2">主催</p>
+        <p class="text-xs md:text-sm leading-relaxed text-offwhite/85">MMJ Academy(医師・歯科医師・獣医師のための再生医療学会)</p>
+      </div>
+      <div class="border border-offwhite/15 rounded-sm p-5 bg-white/[0.03]">
+        <p class="text-gold text-xs tracking-wide mb-2">指導</p>
+        <p class="text-xs md:text-sm leading-relaxed text-offwhite/85">MMJ Academy Board Member 木村一相先生 ほか現地指導医</p>
+      </div>
+    </div>
+
+    <a href="#form" class="btn-primary inline-flex flex-col items-center gap-0.5 mt-10 md:mt-12 px-8 py-4 rounded-sm font-medium">
+      <span class="text-sm md:text-base">無料オンライン説明会に参加する</span>
+      <span class="text-[11px] font-normal opacity-80">所要45分/会員・非会員とも参加可</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+  3. 研修概要
+============================================================ -->
+<section id="overview" class="py-16 md:py-24 bg-offwhite">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">OVERVIEW</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-6">このプログラムの全体像</h2>
+    <div class="divider-gold mb-8"></div>
+
+    <div class="space-y-5 text-sm md:text-[15px] leading-[2] text-navy/85">
+      <p>本研修は、MMJ Academyが主催する、医師・歯科医師・獣医師を対象とした海外臨床研修です。<br>
+      舞台となるのは、マレーシア・サバ州コタキナバルにある European Wellness Premier Center。<br>
+      2024年8月に開設された60,000平方フィート(約5,600㎡)の統合医療施設で、幹細胞治療をはじめとする60種類以上の再生医療・統合医療サービスを提供する、アジア最大級の再生医療拠点の一つです。</p>
+
+      <p>現地では、クリニック・幹細胞ラボ・オーディトリウムでの見学、現地ドクターによる講義とライブQ&amp;A、そして日本側指導医である木村一相先生による解説を通じて、生物学的再生医療(Biological Regenerative Medicine)の理論と臨床現場を、体系的に学びます。</p>
+    </div>
+
+    <!-- 概要テーブル -->
+    <div class="mt-10 md:mt-12 border border-navy/15 rounded-sm overflow-hidden">
+      <table class="w-full text-sm">
+        <tbody>
+          <tr class="border-b border-navy/10 bg-white">
+            <th scope="row" class="text-left align-top w-1/3 sm:w-1/4 px-4 md:px-6 py-4 font-serif font-medium text-navy bg-navy/[0.04]">開催地</th>
+            <td class="px-4 md:px-6 py-4 text-navy/85 leading-relaxed">European Wellness Premier Center・Academy &amp; Showcase(コタキナバル、マレーシア)</td>
+          </tr>
+          <tr class="border-b border-navy/10 bg-offwhite">
+            <th scope="row" class="text-left align-top px-4 md:px-6 py-4 font-serif font-medium text-navy bg-navy/[0.04]">開催日程</th>
+            <td class="px-4 md:px-6 py-4 text-navy/85 leading-relaxed">2026年10月10日(土)〜12日(月・祝) 2泊3日</td>
+          </tr>
+          <tr class="border-b border-navy/10 bg-white">
+            <th scope="row" class="text-left align-top px-4 md:px-6 py-4 font-serif font-medium text-navy bg-navy/[0.04]">主催</th>
+            <td class="px-4 md:px-6 py-4 text-navy/85 leading-relaxed">MMJ Academy(Multi Dimensional Holistic Medical Team Japan)</td>
+          </tr>
+          <tr class="border-b border-navy/10 bg-offwhite">
+            <th scope="row" class="text-left align-top px-4 md:px-6 py-4 font-serif font-medium text-navy bg-navy/[0.04]">対象</th>
+            <td class="px-4 md:px-6 py-4 text-navy/85 leading-relaxed">医師・歯科医師・獣医師(MMJ Academy会員・非会員とも参加可)</td>
+          </tr>
+          <tr class="border-b border-navy/10 bg-white">
+            <th scope="row" class="text-left align-top px-4 md:px-6 py-4 font-serif font-medium text-navy bg-navy/[0.04]">指導</th>
+            <td class="px-4 md:px-6 py-4 text-navy/85 leading-relaxed">木村一相先生(MMJ Academy Board Member &amp; Medical Advisor)、現地EWCドクター</td>
+          </tr>
+          <tr class="border-b border-navy/10 bg-offwhite">
+            <th scope="row" class="text-left align-top px-4 md:px-6 py-4 font-serif font-medium text-navy bg-navy/[0.04]">定員</th>
+            <td class="px-4 md:px-6 py-4 text-navy/85 leading-relaxed">少人数制(理由は本ページ内でご説明します)</td>
+          </tr>
+          <tr class="bg-white">
+            <th scope="row" class="text-left align-top px-4 md:px-6 py-4 font-serif font-medium text-navy bg-navy/[0.04]">修了証</th>
+            <td class="px-4 md:px-6 py-4 text-navy/85 leading-relaxed">プログラム修了時に発行</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  4. ブランドコンセプト・なぜコタキナバルか
+============================================================ -->
+<section id="concept" class="py-16 md:py-24 bg-navy text-offwhite">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold text-xs tracking-[0.2em] mb-3">CONCEPT</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-6">なぜ、日本の医師がコタキナバルを目指すのか。</h2>
+    <div class="w-14 h-0.5 bg-gold mb-8"></div>
+
+    <div class="grid md:grid-cols-5 gap-8 md:gap-12 items-start">
+      <div class="md:col-span-3 space-y-5 text-sm md:text-[15px] leading-[2] text-offwhite/85">
+        <p>再生医療の技術と制度は、国によって進度も許容範囲も大きく異なります。<br>
+        ヨーロッパで培われた生物学的再生医療のノウハウは、European Wellnessのネットワークを通じてマレーシア・コタキナバルに集約され、ドイツ・スイス・ギリシャ・マレーシア・タイ・香港をつなぐ国際的な臨床基盤として運用されています。</p>
+
+        <p>コタキナバルの拠点は、2016年に開設されたトレーニング施設(European Wellness Academy &amp; Showcase)を母体とし、これまでに医師・看護スタッフ・技術者・研究者を含む多くの医療従事者を受け入れてきました。CPD(継続的専門能力開発)認定のトレーニングプログラムとして、有資格の医療従事者が技術と治療法を学べる体制が整っています。</p>
+
+        <p>MMJ Academyは、この国際的な臨床基盤を、日本の医師が体系立てて学べる形に設計し直しました。単発の視察ではなく、学会としての継続的な学びの一部として本研修を位置づけています。</p>
+
+        <p class="text-xs md:text-sm text-gold-light/90 pt-3 border-t border-offwhite/15">
+          本研修は、MMJ Academy Board Member 木村一相先生の監修のもと、現地EWCとの提携に基づき実施されます。
+        </p>
+      </div>
+
+      <div class="md:col-span-2">
+        <!-- 推奨画像: European Wellnessグループの国際ネットワークを示すマップ、または欧州〜アジアの提携拠点を象徴する写真 -->
+        <div class="placeholder-img aspect-[4/5] rounded-sm border border-offwhite/10">
+          <div class="ph-label text-offwhite/70">
+            <div class="ph-icon mb-2">🌐</div>
+            画像プレースホルダー<br>
+            推奨:European Wellness国際ネットワーク図<br>
+            (独/瑞/希/馬/泰/香港拠点マップ)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  5. こんな課題をお持ちの先生へ
+============================================================ -->
+<section id="issues" class="py-16 md:py-24 bg-offwhite">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">FOR PHYSICIANS LIKE YOU</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-10 md:mb-12">独学の限界を感じている先生へ。</h2>
+
+    <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
+      <div class="bg-white border border-navy/10 rounded-sm p-6 md:p-7">
+        <p class="text-xs tracking-wide text-navy/50 mb-2">課題 01</p>
+        <p class="font-serif text-base md:text-lg leading-relaxed mb-4">再生医療を自院に導入したいが、何から学べばよいか分からない</p>
+        <div class="w-8 h-px bg-gold mb-4"></div>
+        <p class="text-sm leading-relaxed text-navy/75">症例選定から施術後フォローまで、現地の診療プロセスを体系的に見学・議論できる</p>
+      </div>
+      <div class="bg-white border border-navy/10 rounded-sm p-6 md:p-7">
+        <p class="text-xs tracking-wide text-navy/50 mb-2">課題 02</p>
+        <p class="font-serif text-base md:text-lg leading-relaxed mb-4">自由診療領域を強化したいが、国内では体系的な学びの場が少ない</p>
+        <div class="w-8 h-px bg-gold mb-4"></div>
+        <p class="text-sm leading-relaxed text-navy/75">生物学的再生医療という異なる技術体系を、理論と臨床の両面から学べる</p>
+      </div>
+      <div class="bg-white border border-navy/10 rounded-sm p-6 md:p-7">
+        <p class="text-xs tracking-wide text-navy/50 mb-2">課題 03</p>
+        <p class="font-serif text-base md:text-lg leading-relaxed mb-4">アンチエイジング・統合医療への関心はあるが、信頼できる情報源がない</p>
+        <div class="w-8 h-px bg-gold mb-4"></div>
+        <p class="text-sm leading-relaxed text-navy/75">学会(MMJ Academy)としての監修体制のもと、エビデンスと現場を接続して学べる</p>
+      </div>
+      <div class="bg-white border border-navy/10 rounded-sm p-6 md:p-7">
+        <p class="text-xs tracking-wide text-navy/50 mb-2">課題 04</p>
+        <p class="font-serif text-base md:text-lg leading-relaxed mb-4">歯科・獣医療領域でも組織再生の知見を取り入れたい</p>
+        <div class="w-8 h-px bg-gold mb-4"></div>
+        <p class="text-sm leading-relaxed text-navy/75">診療科を問わず、再生医療の基礎理論・応用可能性を学べる設計</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  6. プログラムの正体
+============================================================ -->
+<section id="program" class="py-16 md:py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">WHAT THIS PROGRAM IS</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-6">これは、視察旅行でも物件見学でもありません。</h2>
+    <div class="divider-gold mb-8"></div>
+
+    <p class="text-sm md:text-[15px] leading-[2] text-navy/85 mb-8">
+      本研修のスケジュールは、臨床能力の向上を目的として設計されています。
+    </p>
+
+    <ul class="space-y-4 mb-8">
+      <li class="flex gap-3 items-start text-sm md:text-[15px] leading-relaxed text-navy/85 border-b border-navy/10 pb-4">
+        <span class="text-gold shrink-0 mt-0.5">◆</span>EWC施設(クリニック・オーディトリウム)の見学
+      </li>
+      <li class="flex gap-3 items-start text-sm md:text-[15px] leading-relaxed text-navy/85 border-b border-navy/10 pb-4">
+        <span class="text-gold shrink-0 mt-0.5">◆</span>幹細胞ラボの見学
+      </li>
+      <li class="flex gap-3 items-start text-sm md:text-[15px] leading-relaxed text-navy/85 border-b border-navy/10 pb-4">
+        <span class="text-gold shrink-0 mt-0.5">◆</span>現地ドクターによる講義・ウェビナー
+      </li>
+      <li class="flex gap-3 items-start text-sm md:text-[15px] leading-relaxed text-navy/85 border-b border-navy/10 pb-4">
+        <span class="text-gold shrink-0 mt-0.5">◆</span>現地ドクターまたは木村一相先生によるライブQ&amp;A(その場での質疑応答)
+      </li>
+      <li class="flex gap-3 items-start text-sm md:text-[15px] leading-relaxed text-navy/85 pb-2">
+        <span class="text-gold shrink-0 mt-0.5">◆</span>参加医師同士のディスカッション
+      </li>
+    </ul>
+
+    <p class="text-xs md:text-sm leading-relaxed text-navy/60 bg-navy/[0.04] border border-navy/10 rounded-sm p-5">
+      現地でのランチ・ディナー、エクスカーションも予定されていますが、これらは研修参加者同士・指導医との関係構築の場として位置づけられており、観光を主目的とするものではありません。
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+  7. 講師情報
+============================================================ -->
+<section id="instructors" class="py-16 md:py-24 bg-offwhite">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">INSTRUCTORS</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-10 md:mb-12">教えるのは、実際に臨床の最前線に立つ医師です。</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+      <div>
+        <!-- 推奨画像: 木村一相先生のプロフェッショナルなポートレート写真(スーツまたは白衣、正面) -->
+        <div class="placeholder-img aspect-[4/3] rounded-sm mb-5" role="img" aria-label="木村一相先生のプロフィール写真プレースホルダー">
+          <div class="ph-label">
+            <div class="ph-icon mb-2">👤</div>
+            画像プレースホルダー<br>推奨:木村一相先生 プロフィール写真
+          </div>
+        </div>
+        <h3 class="font-serif text-lg md:text-xl font-medium mb-1">木村一相先生</h3>
+        <p class="text-gold-dark text-xs md:text-sm mb-3">MMJ Academy Board Member &amp; Medical Advisor</p>
+        <p class="text-sm leading-relaxed text-navy/75">
+          <!-- 経歴プレースホルダー:実際の経歴文言は別途ご提供いただき次第、この段落を差し替えてください -->
+          略歴について、正式なプロフィール文言を別途ご提供いただき次第、こちらに差し替え掲載いたします。
+        </p>
+      </div>
+
+      <div>
+        <!-- 推奨画像: EWC現地ドクター陣の集合写真、または診療・講義シーンの写真 -->
+        <div class="placeholder-img aspect-[4/3] rounded-sm mb-5" role="img" aria-label="EWC現地ドクター陣の写真プレースホルダー">
+          <div class="ph-label">
+            <div class="ph-icon mb-2">👥</div>
+            画像プレースホルダー<br>推奨:EWC現地ドクター陣・講義風景写真
+          </div>
+        </div>
+        <h3 class="font-serif text-lg md:text-xl font-medium mb-1">EWC現地ドクター</h3>
+        <p class="text-gold-dark text-xs md:text-sm mb-3">European Wellness Premier Center所属医師</p>
+        <p class="text-sm leading-relaxed text-navy/75">
+          European Wellness Premier Centerに所属する現地医師陣が、幹細胞治療をはじめとする再生医療領域の講義・症例解説を担当します。具体的な講師名は開催回ごとに確定次第掲載します。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  8. 病院・施設情報
+============================================================ -->
+<section id="facility" class="py-16 md:py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">FACILITY</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-6">舞台は、アジア最大級の再生医療統合施設。</h2>
+    <div class="divider-gold mb-8"></div>
+
+    <div class="grid md:grid-cols-2 gap-8 md:gap-10 items-start mb-10">
+      <!-- 推奨画像: EWC施設外観またはエントランス・ロビーの実写真 -->
+      <div class="placeholder-img aspect-[4/3] rounded-sm order-1 md:order-2" role="img" aria-label="European Wellness Premier Center施設外観の写真プレースホルダー">
+        <div class="ph-label">
+          <div class="ph-icon mb-2">🏛️</div>
+          画像プレースホルダー<br>推奨:EWC施設外観・エントランス写真
+        </div>
+      </div>
+
+      <div class="space-y-5 text-sm md:text-[15px] leading-[2] text-navy/85 order-2 md:order-1">
+        <p>European Wellness Premier Center(コタキナバル)は、2024年8月に開設された、世界46番目のEuropean Wellness拠点です。
+        延床面積60,000平方フィートの施設内に、60種類以上の再生医療・統合医療therapyサービスが集約されており、コタキナバル工業団地(KKIP)内に広がる50万平方フィート規模のネットワークの中核を担っています。</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 md:gap-10 items-start">
+      <div class="space-y-5 text-sm md:text-[15px] leading-[2] text-navy/85">
+        <p>併設のEuropean Wellness Academy &amp; Showcaseは2016年開設のトレーニング施設で、これまでに医師・看護スタッフ・技術者・研究者を含む多くの医療従事者を受け入れ、CPD認定のトレーニングプログラムを提供してきました。</p>
+        <p>European Wellnessグループは、International Association for Cell Therapy, Europe(IACT)や International Association for Stem Cell Transplantation, USA(IASCT)などの国際団体からも認定・支持を受けています。</p>
+      </div>
+      <!-- 推奨画像: 幹細胞ラボ内部、または研修・トレーニング施設(Academy & Showcase)の写真 -->
+      <div class="placeholder-img aspect-[4/3] rounded-sm" role="img" aria-label="幹細胞ラボまたはトレーニング施設内部の写真プレースホルダー">
+        <div class="ph-label">
+          <div class="ph-icon mb-2">🔬</div>
+          画像プレースホルダー<br>推奨:幹細胞ラボ内部・トレーニング施設写真
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  9. スケジュール(タブ切替)
+============================================================ -->
+<section id="schedule" class="py-16 md:py-24 bg-navy text-offwhite">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold text-xs tracking-[0.2em] mb-3">SCHEDULE</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-10 md:mb-12">2泊3日で、再生医療の現場に入る。</h2>
+
+    <div role="tablist" aria-label="研修日程タブ" class="grid grid-cols-3 gap-2 md:gap-3 mb-8">
+      <button type="button" role="tab" id="tab-btn-day1" aria-controls="day1" aria-selected="true" data-tab="day1" class="tab-btn border border-offwhite/25 text-offwhite/70 rounded-sm py-3 px-2 text-xs md:text-sm text-center transition-colors">
+        <span class="block font-serif text-sm md:text-base mb-0.5">Day 1</span>
+        <span class="block text-[10px] md:text-xs opacity-80">10/10(土)</span>
+      </button>
+      <button type="button" role="tab" id="tab-btn-day2" aria-controls="day2" aria-selected="false" data-tab="day2" class="tab-btn border border-offwhite/25 text-offwhite/70 rounded-sm py-3 px-2 text-xs md:text-sm text-center transition-colors">
+        <span class="block font-serif text-sm md:text-base mb-0.5">Day 2</span>
+        <span class="block text-[10px] md:text-xs opacity-80">10/11(日)</span>
+      </button>
+      <button type="button" role="tab" id="tab-btn-day3" aria-controls="day3" aria-selected="false" data-tab="day3" class="tab-btn border border-offwhite/25 text-offwhite/70 rounded-sm py-3 px-2 text-xs md:text-sm text-center transition-colors">
+        <span class="block font-serif text-sm md:text-base mb-0.5">Day 3</span>
+        <span class="block text-[10px] md:text-xs opacity-80">10/12(月・祝)</span>
+      </button>
+    </div>
+
+    <div class="bg-white/[0.04] border border-offwhite/15 rounded-sm p-6 md:p-8">
+      <div id="day1" role="tabpanel" aria-labelledby="tab-btn-day1" class="tab-panel">
+        <h3 class="font-serif text-lg md:text-xl text-gold-light mb-5">Day1(2026年10月10日・土)</h3>
+        <ul class="space-y-3 text-sm md:text-[15px] leading-relaxed text-offwhite/85">
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>現地集合・オリエンテーション</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>EWC施設紹介(クリニック・オーディトリウム見学)</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>ウェルカムディナー</li>
+        </ul>
+      </div>
+      <div id="day2" role="tabpanel" aria-labelledby="tab-btn-day2" class="tab-panel hidden">
+        <h3 class="font-serif text-lg md:text-xl text-gold-light mb-5">Day2(2026年10月11日・日)</h3>
+        <ul class="space-y-3 text-sm md:text-[15px] leading-relaxed text-offwhite/85">
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>幹細胞ラボ見学</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>現地ドクターによる講義・ウェビナー</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>ケースディスカッション(症例検討)</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>参加医師同士の交流ディナー</li>
+        </ul>
+      </div>
+      <div id="day3" role="tabpanel" aria-labelledby="tab-btn-day3" class="tab-panel hidden">
+        <h3 class="font-serif text-lg md:text-xl text-gold-light mb-5">Day3(2026年10月12日・月・祝)</h3>
+        <ul class="space-y-3 text-sm md:text-[15px] leading-relaxed text-offwhite/85">
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>ライブQ&amp;A(現地ドクターまたは木村一相先生)</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>修了ディスカッション</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>修了証授与</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">・</span>現地解散</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-xs leading-relaxed text-offwhite/50 mt-6">
+      フライト・移動時間は開催時期・就航状況により異なります。休診期間の組み方については、無料オンライン説明会にて個別にご相談いただけます。
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+  10. 受講後に得られる成果
+============================================================ -->
+<section id="outcomes" class="py-16 md:py-24 bg-offwhite">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">OUTCOMES</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-10 md:mb-12">持ち帰るのは、知識だけではありません。</h2>
+
+    <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+      <div class="text-center md:text-left">
+        <div class="w-11 h-11 rounded-full border border-gold flex items-center justify-center mx-auto md:mx-0 mb-5 text-gold font-serif">01</div>
+        <h3 class="font-serif text-lg font-medium mb-3">臨床技術・判断軸</h3>
+        <p class="text-sm leading-relaxed text-navy/75">幹細胞治療における症例選定基準、施術プロセス、フォローアップの実際</p>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="w-11 h-11 rounded-full border border-gold flex items-center justify-center mx-auto md:mx-0 mb-5 text-gold font-serif">02</div>
+        <h3 class="font-serif text-lg font-medium mb-3">国内ではアクセスできない医療への理解</h3>
+        <p class="text-sm leading-relaxed text-navy/75">European Wellnessのネットワークが提供する治療法・技術体系を、現場レベルで理解する</p>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="w-11 h-11 rounded-full border border-gold flex items-center justify-center mx-auto md:mx-0 mb-5 text-gold font-serif">03</div>
+        <h3 class="font-serif text-lg font-medium mb-3">専門家ネットワーク</h3>
+        <p class="text-sm leading-relaxed text-navy/75">MMJ Academy会員医師、現地指導医との継続的なつながり</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  11. 参加条件
+============================================================ -->
+<section id="eligibility" class="py-16 md:py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">ELIGIBILITY</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-6">どのような先生が対象ですか。</h2>
+    <div class="divider-gold mb-8"></div>
+    <p class="text-sm md:text-[15px] leading-[2] text-navy/85">
+      本研修は、医師・歯科医師・獣医師を対象としています(MMJ Academyの入会対象と同一です)。<br>
+      MMJ Academy会員でない先生もご参加いただけますが、事前に簡単な参加申込フォームのご提出をお願いしています。現地セッションには通訳が同行しますので、語学力に不安がある場合もご安心ください。
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+  12. 参加医師の声
+============================================================ -->
+<section id="voices" class="py-16 md:py-24 bg-offwhite">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">VOICES</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-3">参加した医師は、何を得たか。</h2>
+    <p class="text-xs text-navy/50 mb-10 md:mb-12">
+      <!-- 以下は構成イメージのためのダミーコンテンツです。実際の参加者の声に差し替え予定です -->
+      ※以下は構成イメージのためのダミーコンテンツです。実際の参加者の声に差し替え予定です。
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 md:gap-7">
+      <div class="bg-white border border-navy/10 rounded-sm p-6 md:p-7 flex flex-col">
+        <svg class="w-6 h-6 text-gold mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 6C4.86 6 3 7.86 3 10.17c0 2.06 1.5 3.75 3.44 4.08-.36 1.75-1.6 3.24-3.44 3.9v1.7c3.3-.7 5.83-3.3 5.83-6.83V6H7.17zm10 0c-2.31 0-4.17 1.86-4.17 4.17 0 2.06 1.5 3.75 3.44 4.08-.36 1.75-1.6 3.24-3.44 3.9v1.7c3.3-.7 5.83-3.3 5.83-6.83V6h-1.66z"/></svg>
+        <p class="text-sm leading-relaxed text-navy/80 italic mb-6 flex-1">現地の幹細胞ラボで見た品質管理の基準は、帰国後の診療説明そのものを変えました。</p>
+        <p class="text-xs text-navy/50 border-t border-navy/10 pt-4">◯◯クリニック院長・◯◯先生</p>
+      </div>
+      <div class="bg-white border border-navy/10 rounded-sm p-6 md:p-7 flex flex-col">
+        <svg class="w-6 h-6 text-gold mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 6C4.86 6 3 7.86 3 10.17c0 2.06 1.5 3.75 3.44 4.08-.36 1.75-1.6 3.24-3.44 3.9v1.7c3.3-.7 5.83-3.3 5.83-6.83V6H7.17zm10 0c-2.31 0-4.17 1.86-4.17 4.17 0 2.06 1.5 3.75 3.44 4.08-.36 1.75-1.6 3.24-3.44 3.9v1.7c3.3-.7 5.83-3.3 5.83-6.83V6h-1.66z"/></svg>
+        <p class="text-sm leading-relaxed text-navy/80 italic mb-6 flex-1">症例のディスカッションを通じて、自院で導入する際の適応基準がクリアになりました。独学では得られない解像度でした。</p>
+        <p class="text-xs text-navy/50 border-t border-navy/10 pt-4">医療法人◯◯会・◯◯先生(歯科)</p>
+      </div>
+      <div class="bg-white border border-navy/10 rounded-sm p-6 md:p-7 flex flex-col">
+        <svg class="w-6 h-6 text-gold mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 6C4.86 6 3 7.86 3 10.17c0 2.06 1.5 3.75 3.44 4.08-.36 1.75-1.6 3.24-3.44 3.9v1.7c3.3-.7 5.83-3.3 5.83-6.83V6H7.17zm10 0c-2.31 0-4.17 1.86-4.17 4.17 0 2.06 1.5 3.75 3.44 4.08-.36 1.75-1.6 3.24-3.44 3.9v1.7c3.3-.7 5.83-3.3 5.83-6.83V6h-1.66z"/></svg>
+        <p class="text-sm leading-relaxed text-navy/80 italic mb-6 flex-1">通訳が同行してくれたので、専門的な質疑応答も安心して臨めました。同じ志を持つ先生方とのつながりも収穫でした。</p>
+        <p class="text-xs text-navy/50 border-t border-navy/10 pt-4">◯◯動物病院院長・◯◯先生(獣医師)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  13. 費用・お申込み
+============================================================ -->
+<section id="pricing" class="py-16 md:py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">PRICING</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-6">参加費用について</h2>
+    <div class="divider-gold mb-8"></div>
+
+    <p class="text-sm md:text-[15px] leading-[2] text-navy/85 mb-10">
+      参加費用には、現地でのプログラム参加費・施設利用費・通訳費・現地での食事(セミナー時)などが含まれます。<br>
+      航空券・宿泊費は原則各自でのご手配となります(必要に応じて提携旅行会社をご案内可能です)。<br>
+      正式な費用は、無料オンライン説明会にてご案内します。
+    </p>
+
+    <div class="overflow-x-auto border border-navy/15 rounded-sm">
+      <table class="w-full text-sm min-w-[560px]">
+        <thead>
+          <tr class="bg-navy text-offwhite">
+            <th scope="col" class="text-left px-4 md:px-6 py-4 font-serif font-medium">区分</th>
+            <th scope="col" class="text-left px-4 md:px-6 py-4 font-serif font-medium">費用</th>
+            <th scope="col" class="text-left px-4 md:px-6 py-4 font-serif font-medium">含まれるもの</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-navy/10 bg-offwhite">
+            <td class="px-4 md:px-6 py-4 font-medium">MMJ Academy会員</td>
+            <td class="px-4 md:px-6 py-4 text-gold-dark">説明会にてご案内</td>
+            <td class="px-4 md:px-6 py-4 text-navy/75">プログラム参加費・施設利用費・通訳費・現地セミナー時の飲食費</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 md:px-6 py-4 font-medium">非会員</td>
+            <td class="px-4 md:px-6 py-4 text-gold-dark">説明会にてご案内</td>
+            <td class="px-4 md:px-6 py-4 text-navy/75">同上</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-xs leading-relaxed text-navy/55 mt-5">
+      ※含まれないもの:往復航空券、宿泊費、個人的な観光費用 等
+    </p>
+
+    <div class="text-center mt-10">
+      <a href="#form" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-sm font-medium text-sm md:text-base">
+        無料オンライン説明会で詳しい費用を確認する
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  14. FAQ
+============================================================ -->
+<section id="faq" class="py-16 md:py-24 bg-offwhite">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-gold-dark text-xs tracking-[0.2em] mb-3">FAQ</p>
+    <h2 class="font-serif text-2xl md:text-3xl font-medium mb-10 md:mb-12">よくあるご質問</h2>
+
+    <div class="space-y-10">
+      <!-- 参加条件について -->
+      <div>
+        <h3 class="font-serif text-base md:text-lg text-gold-dark mb-4 pb-2 border-b border-navy/15">参加条件について</h3>
+        <div class="divide-y divide-navy/10 border border-navy/10 rounded-sm bg-white">
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">医師以外でも参加できますか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">歯科医師・獣医師もご参加いただけます。MMJ Academyは医師・歯科医師・獣医師を対象とした学会です。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">MMJ Academyの会員でなくても参加できますか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">可能です。非会員の先生もご参加いただけますが、事前に簡単な申込フォームのご提出をお願いしています。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">経験が浅くても参加できますか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">自由診療・再生医療領域の実務経験は問いません。詳細な参加条件は説明会でご案内します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 渡航・スケジュールについて -->
+      <div>
+        <h3 class="font-serif text-base md:text-lg text-gold-dark mb-4 pb-2 border-b border-navy/15">渡航・スケジュールについて</h3>
+        <div class="divide-y divide-navy/10 border border-navy/10 rounded-sm bg-white">
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">語学力に不安があります。</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">現地セッションには通訳が同行しますので、専門用語の理解に不安がある場合もご安心ください。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">休診期間はどのくらい必要ですか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">2026年10月10日(土)〜12日(月・祝)の2泊3日開催です。3連休を活用いただくことで、休診日を最小限に抑えることが可能です。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">航空券やホテルの手配はサポートしてもらえますか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">必要に応じて提携旅行会社をご案内可能です。詳細は説明会でご相談ください。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- プログラムの中身について -->
+      <div>
+        <h3 class="font-serif text-base md:text-lg text-gold-dark mb-4 pb-2 border-b border-navy/15">プログラムの中身について</h3>
+        <div class="divide-y divide-navy/10 border border-navy/10 rounded-sm bg-white">
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">実際に幹細胞治療を体験することはできますか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">ご希望に応じて対応可能な場合があります。医学的な適応・費用については個別にご案内しますので、説明会でご相談ください。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">学会発表や論文作成に活用できる内容ですか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">症例ディスカッションを含む研修内容ですが、学会単位の付与可否は開催回により異なります。該当する場合は説明会で個別にご案内します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 費用・お申込みについて -->
+      <div>
+        <h3 class="font-serif text-base md:text-lg text-gold-dark mb-4 pb-2 border-b border-navy/15">費用・お申込みについて</h3>
+        <div class="divide-y divide-navy/10 border border-navy/10 rounded-sm bg-white">
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">参加費用にはどこまで含まれますか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">現地でのプログラム参加費・施設利用費・通訳費等が含まれます。航空券・宿泊費は原則含まれません。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">定員はありますか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">少人数制です。指導医が症例理解度に応じたディスカッションを行うための構造的な制約であり、詳細は説明会でご説明します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 説明会について -->
+      <div>
+        <h3 class="font-serif text-base md:text-lg text-gold-dark mb-4 pb-2 border-b border-navy/15">説明会について</h3>
+        <div class="divide-y divide-navy/10 border border-navy/10 rounded-sm bg-white">
+          <div class="faq-item">
+            <button type="button" class="faq-toggle w-full text-left flex items-center justify-between gap-4 px-5 py-4" aria-expanded="false">
+              <span class="text-sm md:text-[15px] font-medium">説明会だけ参加して、申し込まないこともできますか？</span>
+              <span class="faq-chevron text-gold text-xl leading-none shrink-0">＋</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="text-sm leading-relaxed text-navy/75 pb-5">もちろん可能です。説明会は情報収集の場としてご活用いただけます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  15. 無料オンライン説明会申込フォーム(最終CTA)
+============================================================ -->
+<section id="form" class="py-16 md:py-24 bg-navy text-offwhite">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10 md:mb-12">
+      <p class="text-gold text-xs tracking-[0.2em] mb-3">FREE ONLINE BRIEFING</p>
+      <h2 class="font-serif text-2xl md:text-3xl font-medium mb-6 leading-relaxed">まずは45分、<br class="sm:hidden">プログラムの詳細をお聞きください。</h2>
+      <p class="text-sm md:text-[15px] leading-[2] text-offwhite/80 text-left inline-block">
+        オンライン説明会では、以下をご案内します。
+      </p>
+      <ul class="text-left text-sm md:text-[15px] leading-relaxed text-offwhite/80 max-w-xl mx-auto mt-3 space-y-2">
+        <li class="flex gap-2"><span class="text-gold shrink-0">・</span>コタキナバル研修(2026年10月10日〜12日)の詳細カリキュラムと指導医の実績</li>
+        <li class="flex gap-2"><span class="text-gold shrink-0">・</span>参加までの流れとお申込み方法</li>
+        <li class="flex gap-2"><span class="text-gold shrink-0">・</span>費用感・休診期間の組み方についての実例</li>
+        <li class="flex gap-2"><span class="text-gold shrink-0">・</span>MMJ Academy入会をご検討の先生への学会概要のご案内</li>
+      </ul>
+    </div>
+
+    <!--
+      TODO(フォーム送信処理について):
+      本フォームは現在デモ用のダミー実装です(console.log出力のみ)。
+      本番運用時は Google フォーム連携または自社APIエンドポイントへの
+      送信処理に差し替えてください。
+    -->
+    <form id="briefing-form" class="bg-white text-navy rounded-sm p-6 md:p-9 space-y-5">
+      <div>
+        <label for="name" class="block text-xs md:text-sm font-medium mb-1.5">お名前 <span class="text-gold-dark">*</span></label>
+        <input type="text" id="name" name="name" required autocomplete="name" class="w-full border border-navy/20 rounded-sm px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" placeholder="例)山田 太郎">
+      </div>
+
+      <div>
+        <label for="clinic" class="block text-xs md:text-sm font-medium mb-1.5">医療機関名 <span class="text-gold-dark">*</span></label>
+        <input type="text" id="clinic" name="clinic" required autocomplete="organization" class="w-full border border-navy/20 rounded-sm px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" placeholder="例)◯◯クリニック">
+      </div>
+
+      <div>
+        <label for="occupation" class="block text-xs md:text-sm font-medium mb-1.5">診療科 <span class="text-gold-dark">*</span></label>
+        <select id="occupation" name="occupation" required class="w-full border border-navy/20 rounded-sm px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold">
+          <option value="" disabled selected>選択してください</option>
+          <option value="医師">医師</option>
+          <option value="歯科医師">歯科医師</option>
+          <option value="獣医師">獣医師</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="email" class="block text-xs md:text-sm font-medium mb-1.5">メールアドレス <span class="text-gold-dark">*</span></label>
+        <input type="email" id="email" name="email" required autocomplete="email" class="w-full border border-navy/20 rounded-sm px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" placeholder="例)info@example.com">
+      </div>
+
+      <div>
+        <label for="tel" class="block text-xs md:text-sm font-medium mb-1.5">電話番号<span class="text-navy/40 text-xs ml-1">(任意)</span></label>
+        <input type="tel" id="tel" name="tel" autocomplete="tel" class="w-full border border-navy/20 rounded-sm px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" placeholder="例)090-1234-5678">
+      </div>
+
+      <fieldset>
+        <legend class="block text-xs md:text-sm font-medium mb-1.5">MMJ Academy会員ですか？ <span class="text-gold-dark">*</span></legend>
+        <div class="flex gap-6 mt-2">
+          <label class="flex items-center gap-2 text-sm">
+            <input type="radio" name="member" value="はい" required class="accent-gold-dark"> はい
+          </label>
+          <label class="flex items-center gap-2 text-sm">
+            <input type="radio" name="member" value="いいえ" required class="accent-gold-dark"> いいえ
+          </label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="message" class="block text-xs md:text-sm font-medium mb-1.5">ご質問・ご要望<span class="text-navy/40 text-xs ml-1">(任意)</span></label>
+        <textarea id="message" name="message" rows="4" class="w-full border border-navy/20 rounded-sm px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" placeholder="ご質問やご要望があればご記入ください"></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary w-full py-4 rounded-sm font-medium text-sm md:text-base">
+        無料オンライン説明会に申し込む
+      </button>
+
+      <p class="text-center text-[11px] md:text-xs text-navy/55 leading-relaxed">
+        所要45分/オンライン開催/会員・非会員とも参加可/しつこい勧誘は一切ありません
+      </p>
+
+      <p id="form-success" class="hidden text-center text-sm text-forest bg-green-50 border border-green-200 rounded-sm p-3" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+  16. フッター
+============================================================ -->
+<footer class="bg-navy-dark text-offwhite/70 py-10 md:py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8">
+      <div>
+        <p class="font-serif text-lg text-offwhite mb-2">MMJ Academy</p>
+        <p class="text-xs text-offwhite/60">主催:MMJ Academy(Multi Dimensional Holistic Medical Team Japan)</p>
+      </div>
+      <nav class="flex flex-wrap gap-x-6 gap-y-2 text-xs">
+        <a href="#overview" class="hover:text-gold-light">研修概要</a>
+        <a href="#program" class="hover:text-gold-light">プログラム</a>
+        <a href="#schedule" class="hover:text-gold-light">スケジュール</a>
+        <a href="#pricing" class="hover:text-gold-light">費用</a>
+        <a href="#faq" class="hover:text-gold-light">FAQ</a>
+        <a href="#form" class="hover:text-gold-light">説明会申込</a>
+      </nav>
+    </div>
+
+    <p class="text-[11px] leading-relaxed text-offwhite/45 border-t border-offwhite/10 pt-6">
+      本ページの内容は医療従事者向けの教育プログラムのご案内です。特定の治療効果・治療結果を保証するものではありません。参加条件・費用の詳細は無料オンライン説明会にてご確認ください。
+    </p>
+
+    <p class="text-[11px] text-offwhite/40 mt-4">© 2026 MMJ Academy. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // ---- ヘッダー:スクロールで背景を強調 ----
+  const header = document.getElementById('site-header');
+  const onScroll = () => {
+    if (window.scrollY > 20) {
+      header.classList.add('shadow-sm');
+    } else {
+      header.classList.remove('shadow-sm');
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ---- モバイルメニュー開閉 ----
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  function closeMobileMenu() {
+    mobileMenu.style.maxHeight = '0px';
+    mobileMenu.style.opacity = '0';
+    menuToggle.setAttribute('aria-expanded', 'false');
+    iconOpen.classList.remove('hidden');
+    iconClose.classList.add('hidden');
+  }
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+    if (isOpen) {
+      closeMobileMenu();
+    } else {
+      mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+      mobileMenu.style.opacity = '1';
+      menuToggle.setAttribute('aria-expanded', 'true');
+      iconOpen.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+    }
+  });
+
+  document.querySelectorAll('.mobile-link').forEach((link) => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  // ---- アンカーナビ:スクロールに応じたアクティブハイライト ----
+  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const sectionIds = Array.from(navLinks).map((l) => l.getAttribute('href').slice(1));
+  const sections = sectionIds
+    .map((id) => document.getElementById(id))
+    .filter(Boolean);
+
+  const setActive = (id) => {
+    navLinks.forEach((link) => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+    });
+  };
+
+  if ('IntersectionObserver' in window && sections.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+    );
+    sections.forEach((sec) => observer.observe(sec));
+  }
+
+  // ---- スケジュールタブ切替 ----
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+
+  tabButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-tab');
+
+      tabButtons.forEach((b) => b.setAttribute('aria-selected', 'false'));
+      btn.setAttribute('aria-selected', 'true');
+
+      tabPanels.forEach((panel) => {
+        panel.classList.toggle('hidden', panel.id !== target);
+      });
+    });
+  });
+
+  // ---- FAQアコーディオン ----
+  document.querySelectorAll('.faq-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      btn.querySelector('.faq-chevron').textContent = !isOpen ? '－' : '＋';
+    });
+  });
+
+  // ---- 申込フォーム送信(ダミー実装) ----
+  // TODO: 本番運用時はGoogleフォーム/APIエンドポイントへの送信処理に差し替え
+  const briefingForm = document.getElementById('briefing-form');
+  const formSuccess = document.getElementById('form-success');
+
+  briefingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(briefingForm);
+    const payload = Object.fromEntries(formData.entries());
+    console.log('【ダミー送信】無料オンライン説明会 申込データ:', payload);
+
+    formSuccess.textContent = 'お申込みを受け付けました(デモ表示)。実際の送信処理は未実装です。';
+    formSuccess.classList.remove('hidden');
+    briefingForm.reset();
+    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+</script>
+</body>
+</html>
